@@ -1,10 +1,8 @@
 # Daily (On Kawara) painting generator
 
-create app
-generate daily painting in html: see codepen
-clip some copy from NYT
-publish 
-
+create app to generate a daily painting in html (see codepen)
+clip some copy from NYT to accompany the html painting
+publish a screenshot on your favorite img stream
 
 ## Getting Started
 
@@ -20,7 +18,7 @@ Give examples
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/tankred/daily-painting/tags).
 
 ## Authors
 
@@ -32,4 +30,4 @@ Add link to license file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* Hat tip to On Kawara
