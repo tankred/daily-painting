@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
-## [0.1.0] - YYYY-MM-DD
+## [0.1.0] - 2021-04-07
 ### Added
 - This CHANGELOG file
+- Ignore vi bak files
