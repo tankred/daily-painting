@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.2.0] - 2021-04-29
+### Changed
+- Bump version to 0.2.0
+
+## [0.1.2] - 2021-04-15
+### Added
+- GPLv3 license
+
+## [0.1.1] - 2021-04-07
+### Changed
+- Readme
+
 ## [0.1.0] - 2021-04-07
 ### Added
 - This CHANGELOG file
