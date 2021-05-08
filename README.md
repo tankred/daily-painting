@@ -13,8 +13,17 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+npm install
 ```
+
+### Generating a daily painting
+
+Get a screenshot
+
+```
+node --unhandled-rejections=strict src/index.js
+```
+
 
 ## Versioning
 
@@ -32,3 +41,4 @@ Tankred
 
 * Hat tip to On Kawara
 * [March 22, 2020](https://codepen.io/tankred/pen/IrHsc)
+
