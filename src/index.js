@@ -1,26 +1,27 @@
 const puppeteer = require('puppeteer')
-const version = '0.3.6'
+const chance = require('chance').Chance()
+const version = '0.3.7'
+// const url = "https://slashdot.org";
+const url = 'https://www.nytimes.com'
+var chint = chance.integer()
 
-const url = "https://slashdot.org";
 async function run() {     
-   let browser = await puppeteer.launch({ headless: true });
-   let page = await browser.newPage();
-   await page.goto(url, { waitUntil: "networkidle0", timeout: 60000 });
-   await page.setViewport({ width: 1024, height: 800 });
+   let browser = await puppeteer.launch({ headless: true })
+   let page = await browser.newPage()
+   await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
+   await page.setViewport({ width: 1024, height: 800 })
    await page.screenshot({
-    path: "./dist/img/screenshot.jpg",
-    type: "jpeg",
+    path: './dist/img/screenshot-NYT-'+chint+'.jpg',
+    type: 'jpeg',
     fullPage: true
-  });
-  await page.close();
-  await browser.close();
+  })
+  await page.close()
+  await browser.close()
 } 
-run();
+run()
 
-// var chance = require('chance').Chance()
 // var n = '33' // first image will be n+1
 // var m = 60
-// var stamp = chance.integer()
 // var url
 // var d = '../dist/img/'
 // var o
