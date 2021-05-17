@@ -21,6 +21,7 @@
   "homepage": "https://github.com/tankred/daily-painting#readme",
   "devDependencies": {
     "chance": "^1.1.7",
+    "minimist": "^1.2.5",
     "puppeteer": "^9.1.1"
   }
 }
