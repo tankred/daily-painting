@@ -8,6 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.3.8] - 2021-05-17
+### Changed
+- Standard fix js
+- Add help info
+
 ## [0.2.3] - 2021-05-17
 ### Changed
 - Add notes from RTM
