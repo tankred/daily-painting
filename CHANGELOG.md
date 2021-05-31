@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.9] - 2021-05-31
+### Changed
+- Scroll NYT to get full header
+
 ## [Released]
 
 ## [0.3.8] - 2021-05-17
