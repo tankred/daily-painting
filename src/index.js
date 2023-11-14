@@ -1,7 +1,7 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.3.9'
+const version = '0.4.0'
 
 const url = 'https://www.nytimes.com'
 const chint = chance.integer()
@@ -37,7 +37,7 @@ if (argv.V === true || argv.version === true) {
 }
 
 async function run () {
-  const browser = await puppeteer.launch({ headless: true })
+  const browser = await puppeteer.launch({ headless: true})
   const page = await browser.newPage()
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
   await page.setViewport({ width: 1024, height: 800 })

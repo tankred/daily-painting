@@ -1,6 +1,7 @@
 # Daily (On Kawara) painting generator
 
 Create app to generate a [daily painting in html (see codepen)](https://codepen.io/tankred/pen/eHspE)
+
 * 10 . clip some copy from NYT to accompany the html painting
 * 20 . publish a screenshot on your favorite img stream
 
