@@ -1,10 +1,20 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.3.8'
+const version = '0.3.9'
 
 const url = 'https://www.nytimes.com'
 const chint = chance.integer()
+
+let dateobj = new Date()
+// current date
+let date = ("0" + dateobj.getDate()).slice(-2)
+// current month
+let month = ("0" + (dateobj.getMonth() + 1)).slice(-2)
+// current year
+let year = dateobj.getFullYear()
+// prints date in YYYYMMDD format
+let ymd = year + month + date
 
 const help = `
 --help # default no params required
@@ -31,10 +41,13 @@ async function run () {
   const page = await browser.newPage()
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
   await page.setViewport({ width: 1024, height: 800 })
+  await page.evaluate(_ => { 
+    window.scrollBy(0, 311)
+  })
   await page.screenshot({
-    path: './dist/img/screenshot-NYT-' + chint + '.jpg',
+    path: './dist/img/NYT-' + ymd + '-' + chint + '.jpg',
     type: 'jpeg',
-    fullPage: true
+    fullPage: false
   })
   await page.close()
   await browser.close()

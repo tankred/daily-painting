@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.4.0] - 2023-11-14
+### Changed
+- Bump version to 0.4.0
+
+## [0.3.9] - 2021-05-31
+### Changed
+- Scroll NYT to get full header
+
 ## [0.3.8] - 2021-05-17
 ### Changed
 - Standard fix js
