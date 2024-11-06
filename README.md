@@ -28,7 +28,7 @@ use npm pageres to create full page screenshots 6 ♦
 ```
 npm install pageres-cli
 pageres www.charlesverraest.be 1024x768 1366x768 #2 screenshots
-pageres www.vives.be/vrijstellingen 1024x768 1366x768
+pageres www.standaard.be/ 1024x768 1366x768
 ```
 Lab pageres > using [pageres api](https://www.npmjs.com/package/pageres)
 
@@ -43,7 +43,7 @@ pageres <url> < screen-resolutions.txt
 
 SAMPLE: 
 ```
-pageres web.vives.be/webshop 1024x768 1366x768
+pageres 891.be 1024x768 1366x768
 ```
 
 [modify click to specific page](https://github.com/checkly/puppeteer-examples/blob/master/3.%20login/github.js)

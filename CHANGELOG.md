@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.5.0] - 2024-11-06
+### Changed
+- Drop links to VIVES sites
+
 ## [0.4.0] - 2023-11-14
 ### Changed
 - Bump version to 0.4.0
