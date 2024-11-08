@@ -1,6 +1,6 @@
 {
   "name": "daily-painting",
-  "version": "0.3.9",
+  "version": "0.5.0",
   "description": "A hommage to On Kawara",
   "main": "src/index.js",
   "scripts": {
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/tankred/daily-painting#readme",
   "devDependencies": {
-    "chance": "^1.1.7",
-    "minimist": "^1.2.5",
-    "puppeteer": "^9.1.1"
+    "chance": "^1.1.12",
+    "minimist": "^1.2.8",
+    "puppeteer": "^23.7.1"
   }
 }

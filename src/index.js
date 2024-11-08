@@ -1,10 +1,11 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.4.0'
+const version = '0.4.2'
 
 const url = 'https://www.nytimes.com'
-const chint = chance.integer()
+// const chint = chance.integer()
+const chint = '1026'
 
 let dateobj = new Date()
 // current date
@@ -37,19 +38,21 @@ if (argv.V === true || argv.version === true) {
 }
 
 async function run () {
-  const browser = await puppeteer.launch({ headless: true})
+  //const browser = await puppeteer.launch({ headless: true})
+  const browser = await puppeteer.launch()
   const page = await browser.newPage()
-  await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
-  await page.setViewport({ width: 1024, height: 800 })
+  // await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
+  await page.goto(url)
+  await page.setViewport({width: 1024, height: 800})
   await page.evaluate(_ => { 
     window.scrollBy(0, 311)
   })
   await page.screenshot({
-    path: './dist/img/NYT-' + ymd + '-' + chint + '.jpg',
-    type: 'jpeg',
-    fullPage: false
+    path: './dist/img/NYT-' + ymd + '-' + chint + '.jpg' //,
+    //type: 'jpeg',
+    //fullPage: false
   })
-  await page.close()
+  //await page.close()
   await browser.close()
 }
 run()
