@@ -1,7 +1,7 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.4.2'
+const version = '0.4.3'
 
 const url = 'https://www.nytimes.com'
 // const chint = chance.integer()
@@ -25,6 +25,7 @@ const help = `
 
 SAMPLE
 node src/index.js
+ALERT : run from ROOT of repo! 
 `
 
 if (argv.help === true || argv.h === true) {
