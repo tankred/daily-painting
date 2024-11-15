@@ -1,11 +1,11 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.4.3'
+const version = '0.5.4'
 
 const url = 'https://www.nytimes.com'
-// const chint = chance.integer()
-const chint = '1026'
+const chint = chance.integer()
+// const chint = '1026'
 
 let dateobj = new Date()
 // current date
@@ -46,7 +46,8 @@ async function run () {
   await page.goto(url)
   await page.setViewport({width: 1024, height: 800})
   await page.evaluate(_ => { 
-    window.scrollBy(0, 311)
+    //window.scrollBy(0, 311)
+    window.scrollBy(0, 3)
   })
   await page.screenshot({
     path: './dist/img/NYT-' + ymd + '-' + chint + '.jpg' //,

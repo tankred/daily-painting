@@ -1,6 +1,6 @@
 {
   "name": "daily-painting",
-  "version": "0.5.0",
+  "version": "0.5.4",
   "description": "A hommage to On Kawara",
   "main": "src/index.js",
   "scripts": {
