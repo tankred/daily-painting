@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.5] - 2024-11-18
+### Changed
+- Fix chance index.js: Run from root of repo!
+
 ## [0.5.4] - 2024-11-15
 ### Changed
 - Fix chance index.js: Run from root of repo!
