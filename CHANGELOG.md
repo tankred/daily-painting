@@ -8,6 +8,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.6.0] - 2024-11-20
+### Changed
+- Merge hotfix node index js
+
+## [0.5.5] - 2024-11-18
+### Changed
+- Fix chance index.js: Run from root of repo!
+
+## [0.5.4] - 2024-11-15
+### Changed
+- Fix chance index.js: Run from root of repo!
+
+## [0.5.3] - 2024-11-14
+### Changed
+- Fix index.js: Run from root of repo!
+
+## [0.5.2] - 2024-11-08
+### Changed
+- NPM update (puppeteer latest)
+
+## [0.5.1] - 2024-11-07
+### Changed
+- NPM update (minimist, puppeteer, chance)
+
 ## [0.5.0] - 2024-11-06
 ### Changed
 - Drop links to VIVES sites
