@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Released]
+
+## [0.6.0] - 2024-11-20
+### Changed
+- Merge hotfix node index js
+
 ## [0.5.5] - 2024-11-18
 ### Changed
 - Fix chance index.js: Run from root of repo!
@@ -25,8 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.1] - 2024-11-07
 ### Changed
 - NPM update (minimist, puppeteer, chance)
-
-## [Released]
 
 ## [0.5.0] - 2024-11-06
 ### Changed
