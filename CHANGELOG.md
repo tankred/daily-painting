@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.6.1] - 2025-04-19
+### Changed
+- Update node index js add newspaper switch
+
 ## [0.6.0] - 2024-11-20
 ### Changed
 - Merge hotfix node index js

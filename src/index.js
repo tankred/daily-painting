@@ -18,9 +18,11 @@ const help = `
 -h     # help
 -V     # version
 --version 
+-N [string] (not implemented yet)
 
 SAMPLE
 node src/index.js
+node src/index.js -N 'https://www.destandaard.be'
 ALERT : run from ROOT of repo! 
 `
 
@@ -34,7 +36,10 @@ if (argv.V === true || argv.version === true) {
   process.exit()
 }
 
+console.log(argv.N)
+
 async function run () {
+  
   //const browser = await puppeteer.launch({ headless: true})
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
