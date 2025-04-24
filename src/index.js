@@ -1,7 +1,7 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.5.5'
+const version = '0.5.6'
 
 const url = 'https://www.nytimes.com'
 const chint = chance.integer()
@@ -35,19 +35,28 @@ if (argv.V === true || argv.version === true) {
   console.log(version)
   process.exit()
 }
-
-console.log(argv.N)
+  // 
+  // const customIndex = process.argv.indexOf('-N');
+  // let customValue;
+  // 
+  // if (customIndex > -1) {
+  //   // Retrieve the value after --custom
+  //   customValue = process.argv[customIndex + 1];
+  // }
+  // 
+  // const custom = (customValue || 'Default');
+  // console.log(argv.N)
+  // if (argv.N
 
 async function run () {
-  
-  //const browser = await puppeteer.launch({ headless: true})
+  //? const browser = await puppeteer.launch({ headless: true})
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
-  // await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
+  //? await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
   await page.goto(url)
   await page.setViewport({width: 1024, height: 800})
   await page.evaluate(_ => { 
-    //window.scrollBy(0, 311)
+    //? window.scrollBy(0, 311)
     window.scrollBy(0, 31)
   })
   await page.screenshot({
