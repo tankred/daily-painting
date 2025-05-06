@@ -1,11 +1,9 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.5.6'
+const version = '0.5.7'
 
-const url = 'https://www.nytimes.com'
 const chint = chance.integer()
-//? const chint = '1026'
 
 let dateobj = new Date()         // current date
 let date = ("0" + dateobj.getDate()).slice(-2)
@@ -35,7 +33,7 @@ if (argv.V === true || argv.version === true) {
   console.log(version)
   process.exit()
 }
-  // 
+ 
   // const customIndex = process.argv.indexOf('-N');
   // let customValue;
   // 
@@ -43,10 +41,9 @@ if (argv.V === true || argv.version === true) {
   //   // Retrieve the value after --custom
   //   customValue = process.argv[customIndex + 1];
   // }
-  // 
-  // const custom = (customValue || 'Default');
-  // console.log(argv.N)
-  // if (argv.N
+
+const url = (argv.N || 'https://www.nytimes.com');
+//? console.log(argv.N)
 
 async function run () {
   //? const browser = await puppeteer.launch({ headless: true})
