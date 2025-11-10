@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.6.4] - 2025-11-11
+### Changed
+- Bump version
+
 ## [0.6.3] - 2025-05-06
 ### Changed
 - WIP Update node index js add newspaper argv
