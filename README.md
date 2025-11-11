@@ -54,6 +54,9 @@ pageres 891.be 1024x768 1366x768
 What things you need to install the software and how to install them
 
 ```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash # install nvm (node version manager)
+nvm install 25 # install node v25
+
 npm i -g puppeteer
 npm install
 ```
