@@ -1,7 +1,7 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.5.7'
+const version = '0.5.8'
 
 const chint = chance.integer()
 
