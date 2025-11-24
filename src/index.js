@@ -30,7 +30,8 @@ if (argv.help === true || argv.h === true) {
 }
 
 if (argv.V === true || argv.version === true) {
-  console.log(version)
+  // Wrap the things you want to log in curly braces. The console then logs both the name and the value of what you want to know about.
+  console.log({version})
   process.exit()
 }
  
