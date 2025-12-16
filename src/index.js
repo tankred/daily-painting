@@ -1,7 +1,7 @@
 const argv = require('minimist')(process.argv.slice(2))
 const puppeteer = require('puppeteer')
 const chance = require('chance').Chance()
-const version = '0.5.8'
+const version = '0.5.9'
 
 const chint = chance.integer()
 
@@ -16,7 +16,7 @@ const help = `
 -h     # help
 -V     # version
 --version 
--N [string] (not implemented yet)
+-N [URL] 
 
 SAMPLE
 node src/index.js
@@ -30,41 +30,26 @@ if (argv.help === true || argv.h === true) {
 }
 
 if (argv.V === true || argv.version === true) {
-  // Wrap the things you want to log in curly braces. The console then logs both the name and the value of what you want to know about.
+  //? Wrap the things you want to log in curly braces. The console then logs both the name and the value of what you want to know about.
   console.log({version})
   process.exit()
 }
  
-  // const customIndex = process.argv.indexOf('-N');
-  // let customValue;
-  // 
-  // if (customIndex > -1) {
-  //   // Retrieve the value after --custom
-  //   customValue = process.argv[customIndex + 1];
-  // }
-
 const url = (argv.N || 'https://www.nytimes.com');
-//? console.log(argv.N)
 
 async function run () {
-  //? const browser = await puppeteer.launch({ headless: true})
   const browser = await puppeteer.launch()
   const page = await browser.newPage()
-  //? await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 })
   await page.goto(url)
   await page.setViewport({width: 1024, height: 800})
   await page.evaluate(_ => { 
-    //? window.scrollBy(0, 311)
     window.scrollBy(0, 31)
   })
   await page.screenshot({
-    path: './dist/img/NYT-' + ymd + '-' + chint + '.jpg' //,
-    //type: 'jpeg',
-    //fullPage: false
+    path: './dist/img/NWS-' + ymd + '-' + chint + '.jpg' 
   })
-  //await page.close()
   await browser.close()
 }
 run()
-console.log('feh ./dist/img/NYT-' + ymd + '-' + chint + '.jpg')
+console.log('feh ./dist/img/NWS-' + ymd + '-' + chint + '.jpg')
 // EOF
