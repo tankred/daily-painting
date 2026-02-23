@@ -6,6 +6,11 @@ Create app to generate a [daily painting in html (see codepen)](https://codepen.
 
 * 10 . clip some copy from NYT to accompany the html painting
 * 20 . publish a screenshot on your favorite img stream
+* 30 . WIP generate an image with date using imagemagick
+
+```
+magick img-src/20211227_185121.jpg -fill white -pointsize 388 -stroke black -strokewidth 3 -gravity north -annotate +0+20 'RAVE' -gravity south -annotate +0+20 'SUNDAY PAINTING' img-src/sundayrave.png
+```
 
 ## Getting Started
 
